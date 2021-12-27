@@ -477,7 +477,7 @@ img {
 .page-top .image__about {
 	background:url(../images/about.jpg) no-repeat center;
 	background-size:cover}
-.text {
+.text1 {
 	position:relative;
 	display:-webkit-box;
 	display:-ms-flexbox;
@@ -488,14 +488,14 @@ img {
 	padding-left:138px;
 	margin-top:14.4rem}
 @media screen and (max-width:800px) {
-	.text {
+	.text1 {
 	-webkit-box-align:start;
 	-ms-flex-align:start;
 	align-items:flex-start;
 	padding-left:0}
 }
 @media screen and (max-width:420px) {
-	.text {
+	.text1 {
 	margin-top:7.2rem}
 }
 .text--top {
@@ -627,6 +627,21 @@ header .icons {
 	header .icons {
 	display:none}
 }
+
+@media screen and (max-width:420px) {
+	.wrap{
+		margin: auto 0;
+	}
+
+	.logo{
+		font-size: 0.7em;
+	}
+
+	.wissLogo{
+		width: 150px;
+	}
+}
+
 header .icons a {
 	display:block;
 	margin-right:3.2rem;
@@ -700,7 +715,7 @@ header .global-nav.js-open a {
 header .global-nav__list {
 	text-align:center}
 header .global-nav__list li {
-	margin-top:6rem;
+	margin-top:4rem;
 	position:relative;
 	padding:0 153px;
 	overflow:hidden}
@@ -709,7 +724,7 @@ header .global-nav__list li:first-child {
 @media screen and (max-width:420px) {
 	header .global-nav__list li {
 	padding:0;
-	margin-top:3.2rem}
+	margin-top: 1.6rem}
 }
 header .global-nav__list a {
 	display:inline-block;
