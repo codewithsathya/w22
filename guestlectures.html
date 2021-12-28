@@ -75,10 +75,6 @@
         width: 200px;
       }
 
-      body {
-        cursor: none !important;
-      }
-
       .cur {
         height: 31px;
         width: 31px;
@@ -408,10 +404,6 @@
       </main>
     </div>
 
-    <div class="cur" id="circle">
-      <div class="main-cur"></div>
-      <img class="satelite" src="https://bit.ly/30JAPdZ" alt="" />
-    </div>
 
     <script src="./js/js1.js"></script>
     <script src="./js/js2.js"></script>
@@ -419,25 +411,6 @@
     <script src="./js/js4.js"></script>
     <script src="./js/js5.js"></script>
     <script src="./js/js6.js"></script>
-    <script>
-      let links = document.querySelector(".main-content a");
-      const cursors = document.querySelector(".cur");
-      document.addEventListener("mousemove", (e) => {
-        let x = e.pageX;
-        let y = e.pageY;
-        cursors.setAttribute(
-          "style",
-          "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
-        );
-      });
-
-      document.addEventListener("click", () => {
-        cursors.classList.add("expand");
-        setTimeout(() => {
-          cursors.classList.remove("expand");
-        }, 500);
-      });
-    </script>
 
     <script src="./guestlectures/assets/vendor/aos/aos.js"></script>
     <script src="./guestlectures/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
