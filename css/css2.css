@@ -715,7 +715,7 @@ header .global-nav.js-open a {
 header .global-nav__list {
 	text-align:center}
 header .global-nav__list li {
-	margin-top:4rem;
+	margin-top:3rem;
 	position:relative;
 	padding:0 153px;
 	overflow:hidden}
@@ -1645,4 +1645,9 @@ to {
 	width:10%}
 to {
 	width:40%}
+}
+
+header{
+	padding-bottom: 10px;
+	background-color: #000;
 }

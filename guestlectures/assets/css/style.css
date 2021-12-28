@@ -675,8 +675,6 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("https://www.iiests.ac.in/assets/images/bg/07.jpg") center
-    center;
   background-size: cover;
   position: relative;
   padding: 80px 0;
