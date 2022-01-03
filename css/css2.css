@@ -1046,7 +1046,7 @@ header .global-nav__list a:after {
   background: #fff;
   position: absolute;
   left: 0;
-  top: 40%;
+  top: 90%;
   -webkit-box-shadow: 0 10px 30px rgba(2, 11, 22, 0.2);
   box-shadow: 0 10px 30px rgba(2, 11, 22, 0.2);
   -webkit-transition: 0.3s cubic-bezier(0.77, 0, 0.175, 1);
