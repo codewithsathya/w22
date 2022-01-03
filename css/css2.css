@@ -825,7 +825,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 40px 0;
+  padding: 20px 40px 0;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -871,6 +871,7 @@ header .wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: center;
   position: relative;
 }
 header .icons {
@@ -2220,6 +2221,6 @@ header .global-nav__sns a:last-child {
 }
 
 header {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   background-color: #000;
 }

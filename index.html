@@ -219,6 +219,19 @@
   background: #1a28cf;
 }
 
+.floating {  
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
 /* @media only screen and (max-width: 380px) {
   .cur {
     display: none;
@@ -256,7 +269,7 @@
           <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
           <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
           <div style="display: flex">
-            <a style="margin: 0" href="">Sign in|</a><a href="">Register</a>
+            <a style="margin: 0" href="">Sign in</a>
           </div>
         </div>
         <div class="menuIcon js-menuBtn"></div>
@@ -291,10 +304,10 @@
       </div>
     </div>
     <div class="images-layer">
-      <a href=""><div class="img1 hvr-grow"><img src="./images/satellite1.png" alt=""><p class="subHead">Workshops</p></div></a>
-      <a href=""><div class="img2 hvr-grow"><img src="./images/satellite2.png" alt=""><p class="subHead">Contact</p></div></a>
-      <a href=""><div class="img3 hvr-grow"><img src="./images/satellite3.png" alt=""><p class="subHead">Competitions</p></div>
-      <a href=""><div class="img4 hvr-grow"><img src="./images/satellite4.png" alt=""><p class="subHead">Initiatives</p></div></a>
+      <a href=""><div class="img1 floating"><img src="./images/satellite1.png" alt="" class="hvr-grow"><p class="subHead">Workshops</p></div></a>
+      <a href=""><div class="img2 floating"><img src="./images/satellite2.png" alt="" class="hvr-grow"><p class="subHead">Contact</p></div></a>
+      <a href=""><div class="img3 floating"><img src="./images/satellite3.png" alt="" class="hvr-grow"><p class="subHead">Competitions</p></div>
+      <a href=""><div class="img4 floating"><img src="./images/satellite4.png" alt="" class="hvr-grow"><p class="subHead">Initiatives</p></div></a>
     </div>
     <div id="globeViz"></div>
     <!-- <div class="cur" id="circle">
