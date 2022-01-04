@@ -33,6 +33,7 @@ body {
   overflow: hidden;
   box-shadow: 0 3rem 6rem rgba(150, 144, 144, 0.205);
   /* cursor: pointer; */
+  width: auto;
   height: 100%;
 }
 
@@ -112,5 +113,12 @@ body {
 
   .grid {
     grid-gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
