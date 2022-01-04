@@ -13,7 +13,7 @@
     <style>
       body {
         margin: 0;
-        background-color: #060c21;
+        background-color: #121212;
       }
       .globeViz {
         position: absolute;
@@ -73,10 +73,6 @@
 
       .wissLogo {
         width: 200px;
-      }
-
-      body {
-        cursor: none !important;
       }
 
       .cur {
@@ -189,7 +185,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Abril+Fatface"
     />
-    <!-- <link rel="stylesheet" href="./css/hover-min.css" /> -->
+    <link rel="stylesheet" href="./css/hover-min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="./css/profile.css" />
 
     <link
@@ -237,24 +235,13 @@
           </li>
         </ul>
       </nav>
-      <div class="curtain"></div>
-      <div class="loader"></div>
+      <!-- <div class="curtain"></div> -->
+      <!-- <div class="loader"></div> -->
     </header>
 
     <div class="top-layer">
       <div class="container">
-        <div class="wrapper">
-          <!-- <div class="card">
-                      <div class="overlay"></div>
-                      <div class="box header">
-                          <img src="robo1.jpg" alt="">
-                          <h2>Prakash Mohaldar</h2>
-                          <h4>1234@iitbbs.ac.in</h4>
-                      </div>
-                      <div class="box footer">
-                          <button class="welcome-button">Fill Details<i class="fas fa-arrow-right"></i></button>
-                      </div>
-                  </div> -->
+        <div class="cardWrapper">
           <div class="card outer-div">
             <div class="inner-div">
               <div class="front">
@@ -269,195 +256,58 @@
                   </p>
                 </div>
               </div>
-              <!-- <div class="back">
-                              <div class="social-media-wrapper">
-                                  <a href="https://codepen.io/alexpg96" target="_blank" class="social-icon"><i class="fab fa-codepen" aria-hidden="true"></i></a>
-                                  <a href="https://github.com/AlexPG96" target="_blank" class="social-icon"><i class="fab fa-github" aria-hidden="true"></i></a>
-                                  <a href="https://apgonzalez.com" target="_blank" class="social-icon"><i class="fas fa-globe" aria-hidden="true"></i></a>
-                                  <a href="https://apgonzalez.com" class="social-icon"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                              </div>
-                          </div> -->
             </div>
           </div>
         </div>
-        <div class="wrapper">
-          <div class="fields">
-            <form class="form">
-              <div class="lead__form__outer">
-                <div class="contain is-centered">
-                  <div class="columns">
-                    <div class="column">
-                      <div class="lead__form__wrapper">
-                        <!-- <div class="success" style="display: none">
-                          <h3>
-                            <strong
-                              >Thank you, ! Your submission has been
-                              received</strong
-                            >
-                          </h3>
-                          <a href="/" class="form__back"> Back to main page </a>
-                        </div> -->
-                        <div class="form" style="display: block">
-                          <form
-                            action="/contact/action"
-                            id="dropzoneForm"
-                            class="dropzone dz-clickable"
-                            enctype="multipart/form-data"
-                            method="post"
-                            autocomplete="off"
-                          >
-                            <input
-                              type="hidden"
-                              name="_token"
-                              value="EUGiIHt3W0SmutBaJ3yWOSOOk2RKtFfoTFt8xHCM"
-                            />
-                            <div class="form__grid">
-                              <div class="form__row">
-                                <div class="form__col form__col--1_2">
-                                  <div class="form__area">
-                                    <div class="form__area__title">College</div>
-                                    <div class="form__area__field">
-                                      <input
-                                        data-info="college"
-                                        name="college"
-                                        type="text"
-                                        class="form__input"
-                                        value=""
-                                        placeholder="IIT Bhubaneswar"
-                                      />
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="form__col form__col--1_2">
-                                  <div class="form__area">
-                                    <div class="form__area__title">
-                                      Phone number
-                                    </div>
-                                    <div class="form__area__field">
-                                      <input
-                                        data-info="phone"
-                                        name="phone"
-                                        type="text"
-                                        class="form__input"
-                                        placeholder="Whatsapp number"
-                                        value=""
-                                      />
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="form__row">
-                                <input
-                                  data-info="referrer"
-                                  type="hidden"
-                                  value=""
-                                />
-                                <div class="form__col form__col--1_2">
-                                  <div class="form__area">
-                                    <div class="form__area__title">City</div>
-                                    <div
-                                      class="
-                                        form__area__field
-                                        form__area__field--required
-                                      "
-                                      title="Required"
-                                    >
-                                      <input
-                                        data-info="city"
-                                        name="city"
-                                        type="text"
-                                        class="form__input"
-                                        placeholder="Bhubaneswar"
-                                        value=""
-                                      />
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="form__col form__col--1_2">
-                                  <div class="form__area">
-                                    <div class="form__area__title">Year</div>
-                                    <div
-                                      class="
-                                        form__area__field
-                                        form__area__field--required
-                                      "
-                                    >
-                                      <input
-                                        data-info="year"
-                                        name="year"
-                                        type="number"
-                                        class="form__input"
-                                        placeholder="2"
-                                        value=""
-                                      />
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="form__row">
-                                <div class="form__col form__col--1_2">
-                                  <div class="form__area">
-                                    <div class="form__area__title">Branch</div>
-                                    <div
-                                      class="
-                                        form__area__field
-                                        form__area__field--required
-                                      "
-                                    >
-                                      <input
-                                        data-info="branch"
-                                        name="branch"
-                                        type="text"
-                                        class="form__input"
-                                        placeholder="Computer "
-                                        value=""
-                                      />
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="form__col form__col--1_2">
-                                  <div class="form__area">
-                                    <div class="form__area__title">
-                                      Reference ID of CA(if any)
-                                    </div>
-                                    <div
-                                      class="
-                                        form__area__field
-                                        form__area__field--required
-                                      "
-                                    >
-                                      <input
-                                        data-info="ca"
-                                        name="ca"
-                                        type="text"
-                                        class="form__input"
-                                        placeholder="W2CA001"
-                                        value=""
-                                      />
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </form>
-                          <div class="form__row">
-                            <div
-                              class="
-                                form__col form__col--1 form__submit__wrapper
-                              "
-                            >
-                              <div data-info="submit" class="form__submit">
-                                Submit Request
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+        <div class="cardWrapper">
+          <div class="formContainer">
+            <div class="title">Update Profile</div>
+            <div class="content">
+              <form action="#">
+                <div class="user-details">
+                  <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input
+                      type="text"
+                      placeholder="Enter your phone number"
+                      required
+                    />
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Institute</span>
+                    <input
+                      type="text"
+                      placeholder="Eg: IIT Bhubaneswar"
+                      required
+                    />
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Branch</span>
+                    <input
+                      type="text"
+                      placeholder="Eg: Computer Science"
+                      required
+                    />
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Year</span>
+                    <input type="text" placeholder="Eg: 3rd year" required />
+                  </div>
+                  <div class="input-box">
+                    <span class="details">City</span>
+                    <input type="text" placeholder="Eg: Bhubaneswar" required />
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Reference ID of CA (if any)</span>
+                    <input type="text" placeholder="Eg: W22001" required />
                   </div>
                 </div>
-              </div>
-            </form>
+
+                <div class="button">
+                  <input type="submit" value="Submit" />
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -491,6 +341,16 @@
         setTimeout(() => {
           cursors.classList.remove("expand");
         }, 500);
+      });
+    </script>
+    <script>
+      window.addEventListener("load", () => {
+        AOS.init({
+          duration: 1000,
+          easing: "ease-in-out",
+          once: true,
+          mirror: false,
+        });
       });
     </script>
   </body>
