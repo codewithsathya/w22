@@ -10,12 +10,47 @@
       rel="stylesheet"
       type="text/css"
     />
+    <meta charset="utf-8" />
+    <link rel="icon" href="./build/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="./build/logo192.png" />
+    <link rel="manifest" href="./build/manifest.json" />
+    <title>Workshops</title>
+    <script defer="defer" src="./build/static/js/main.dd7f52e2.js"></script>
+
+    <link href="./build/static/css/main.3b034d6a.css" rel="stylesheet" />
+
     <style>
       body {
-        margin: 10px;
-        background-color: #121212;
+        margin: 0;
+        background-color: #060c21;
+        font-family: "Poppins", sans-serif;
       }
-
       .globeViz {
         position: absolute;
         display: inline;
@@ -28,16 +63,21 @@
         position: absolute;
         width: 100%;
         z-index: 1;
-        top: 12vh;
+        top: 6vh;
         left: 0;
-        padding: 20px;
-        /* background-color: #eee; */
+      }
+      .top {
+        margin-top: 100px;
       }
 
+      .css-1xlofvx {
+        margin-top: 20px;
+      }
       .logo {
         margin: 50px auto;
         text-align: center;
       }
+
       .logo a {
         text-decoration: none;
         -webkit-transform: perspective(2.5em) rotateX(12deg) scaleY(0.8);
@@ -184,8 +224,6 @@
 
     <!-- <link rel="stylesheet" href="./css/css1.css"> -->
     <link rel="stylesheet" href="./css/css2.css" />
-
-    <link rel="stylesheet" href="./css/initiatives.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
@@ -194,8 +232,6 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Abril+Fatface"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="./css/hover-min.css" />
   </head>
 
@@ -238,135 +274,11 @@
       <div class="curtain"></div>
       <div class="loader"></div>
     </header>
+
     <div class="top-layer">
-      <div class="grid heading" data-aos="zoom-in-top" data-aos-delay="400">
-        <div><h2>Initiatives</h2></div>
-      </div>
-      <div class="grid">
-        <div class="grid-item" data-aos="zoom-in-right" data-aos-delay="200">
-          <div class="card">
-            <img
-              class="card-img"
-              src="https://wissenaire.org/images/wintern.jpg"
-              alt="Rome"
-            />
-            <div class="card-content d-flex flex-column">
-              <h1 class="card-header">Sanchaar</h1>
-              <p class="card-text">
-                Rome is known for its stunning <strong> architecture</strong>,
-                with the Colleseum, Pantheon, and Trevi Fountain as the main
-                attractions.
-              </p>
-              <!-- <button class="align-self-end card-btn">
-                Visit <span>&rarr;</span>
-              </button> -->
-            </div>
-          </div>
-        </div>
-        <div class="grid-item" data-aos="zoom-in-up" data-aos-delay="200">
-          <div class="card">
-            <img
-              class="card-img"
-              src="https://wissenaire.org/images/nco.jpg"
-              alt="Grand Canyon"
-            />
-            <div class="card-content d-flex flex-column">
-              <h1 class="card-header">Wintern Internship</h1>
-              <p class="card-text">
-                One of the world's natural wonders, the iconic Grand Canyon
-                draws oohs and aahs from visitors perched at the edge of its
-                <strong>towering</strong>.
-              </p>
-              <!-- <button class="align-self-end card-btn">
-                Visit <span>&rarr;</span>
-              </button> -->
-            </div>
-          </div>
-        </div>
-        <div class="grid-item" data-aos="zoom-in-left" data-aos-delay="200">
-          <div class="card">
-            <img
-              class="card-img"
-              src="https://wissenaire.org/images/nco.jpg"
-              alt="Maldives"
-            />
-            <div class="card-content d-flex flex-column">
-              <h1 class="card-header">National Coding olympiad</h1>
-              <p class="card-text">
-                The Maldives are known for their
-                <strong>natural environment</strong> including the blue ocean,
-                white beaches, and clean air, attracting tourists.
-              </p>
-              <!-- <button class="align-self-end card-btn">
-                Visit <span>&rarr;</span>
-              </button> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="grid">
-        <div class="grid-item" data-aos="zoom-in-right" data-aos-delay="200">
-          <div class="card">
-            <img
-              class="card-img"
-              src="https://wissenaire.org/images/wintern.jpg"
-              alt="Rome"
-            />
-            <div class="card-content d-flex flex-column">
-              <h1 class="card-header">Sanchaar</h1>
-              <p class="card-text">
-                Rome is known for its stunning <strong> architecture</strong>,
-                with the Colleseum, Pantheon, and Trevi Fountain as the main
-                attractions.
-              </p>
-              <!-- <button class="align-self-end card-btn">
-                Visit <span>&rarr;</span>
-              </button> -->
-            </div>
-          </div>
-        </div>
-        <div class="grid-item" data-aos="zoom-in-up" data-aos-delay="200">
-          <div class="card">
-            <img
-              class="card-img"
-              src="https://wissenaire.org/images/nco.jpg"
-              alt="Grand Canyon"
-            />
-            <div class="card-content d-flex flex-column">
-              <h1 class="card-header">Wintern Internship</h1>
-              <p class="card-text">
-                One of the world's natural wonders, the iconic Grand Canyon
-                draws oohs and aahs from visitors perched at the edge of its
-                <strong>towering</strong>.
-              </p>
-              <!-- <button class="align-self-end card-btn">
-                Visit <span>&rarr;</span>
-              </button> -->
-            </div>
-          </div>
-        </div>
-        <div class="grid-item" data-aos="zoom-in-left" data-aos-delay="200">
-          <div class="card">
-            <img
-              class="card-img"
-              src="https://wissenaire.org/images/nco.jpg"
-              alt="Maldives"
-            />
-            <div class="card-content d-flex flex-column">
-              <h1 class="card-header">National Coding olympiad</h1>
-              <p class="card-text">
-                The Maldives are known for their
-                <strong>natural environment</strong> including the blue ocean,
-                white beaches, and clean air, attracting tourists.
-              </p>
-              <!-- <button class="align-self-end card-btn">
-                Visit <span>&rarr;</span>
-              </button> -->
-            </div>
-          </div>
-        </div>
-      </div>
+      <div id="root" class="top"></div>
     </div>
+
     <!-- <div class="cur" id="circle">
       <div class="main-cur"></div>
       <img class="satelite" src="https://bit.ly/30JAPdZ" alt="" />
@@ -378,17 +290,6 @@
     <script src="./js/js4.js"></script>
     <script src="./js/js5.js"></script>
     <script src="./js/js6.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      window.addEventListener("load", () => {
-        AOS.init({
-          duration: 1000,
-          easing: "ease-in-out",
-          once: true,
-          mirror: false,
-        });
-      });
-    </script>
     <!-- <script>
       let links = document.querySelector(".main-content a");
       const cursors = document.querySelector(".cur");

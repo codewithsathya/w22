@@ -27,7 +27,7 @@
         position: absolute;
         width: 100%;
         z-index: 1;
-        top: 12vh;
+        top: 6vh;
         left: 0;
       }
 
@@ -256,6 +256,8 @@
       href="https://fonts.googleapis.com/css?family=Abril+Fatface"
     />
     <link rel="stylesheet" href="./css/hover-min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <script src="https://unpkg.com/globe.gl@2.23.0/dist/globe.gl.min.js"></script>
     <script src="./temp/globe.js"></script>
     <!--<script src="../../dist/globe.gl.js"></script>-->
@@ -305,7 +307,9 @@
       </div>
     </div>
     <div class="images-layer">
-      <a href=""><div class="img1 floating"><img src="./images/satellite1.png" alt="" class="hvr-grow"><p class="subHead">Workshops</p></div></a>
+  
+      <a href=""><div class="img1 floating" ><img src="./images/satellite1.png" alt="" class="hvr-grow" ><p class="subHead">Workshops</p></div></a>
+   
       <a href=""><div class="img2 floating"><img src="./images/satellite2.png" alt="" class="hvr-grow"><p class="subHead">Contact</p></div></a>
       <a href=""><div class="img3 floating"><img src="./images/satellite3.png" alt="" class="hvr-grow"><p class="subHead">Competitions</p></div>
       <a href=""><div class="img4 floating"><img src="./images/satellite4.png" alt="" class="hvr-grow"><p class="subHead">Initiatives</p></div></a>
@@ -361,6 +365,16 @@
     <script src="./js/js4.js"></script>
     <script src="./js/js5.js"></script>
     <script src="./js/js6.js"></script>
+    <script>
+      window.addEventListener("load", () => {
+        AOS.init({
+          duration: 1000,
+          easing: "ease-in-out",
+          once: true,
+          mirror: false,
+        });
+      });
+    </script>
     <!-- <script>
       let links = document.querySelector(".main-content a");
 const cursors = document.querySelector(".cur");

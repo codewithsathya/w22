@@ -891,11 +891,11 @@ button {
 .formContainer {
   width: 100%;
   background-color: rgba(255, 254, 254, 0.966);
-  background-image: url("./../images/bg_form.jpg");
+  /* background-image: url("./../images/bg_form.jpg"); */
   background-repeat: no-repeat;
   background-size: 100%;
   padding: 30px 30px 10px 30px;
-  border-radius: 5px;
+  border-radius: 25px;
   /* box-shadow: 0 0 30px rgba(255, 0, 0, 0.3); */
 }
 .formContainer .title {

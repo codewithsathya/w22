@@ -10,46 +10,10 @@
       rel="stylesheet"
       type="text/css"
     />
-    <meta charset="utf-8" />
-    <link rel="icon" href="./build/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="./build/logo192.png" />
-    <link rel="manifest" href="./build/manifest.json" />
-    <title>Workshops</title>
-    <script defer="defer" src="./build/static/js/main.dd7f52e2.js"></script>
-
-    <link href="./build/static/css/main.3b034d6a.css" rel="stylesheet" />
-
     <style>
       body {
         margin: 0;
-        background-color: #060c21;
-        font-family: "Poppins", sans-serif;
+        background-color: #121212;
       }
       .globeViz {
         position: absolute;
@@ -63,21 +27,14 @@
         position: absolute;
         width: 100%;
         z-index: 1;
-        top: 6vh;
+        top: 12vh;
         left: 0;
       }
-      .top {
-        margin-top: 100px;
-      }
 
-      .css-1xlofvx {
-        margin-top: 20px;
-      }
       .logo {
         margin: 50px auto;
         text-align: center;
       }
-
       .logo a {
         text-decoration: none;
         -webkit-transform: perspective(2.5em) rotateX(12deg) scaleY(0.8);
@@ -118,9 +75,9 @@
         width: 200px;
       }
 
-      /* body {
+      body {
         cursor: none !important;
-      } */
+      }
 
       .cur {
         height: 31px;
@@ -233,6 +190,7 @@
       href="https://fonts.googleapis.com/css?family=Abril+Fatface"
     />
     <link rel="stylesheet" href="./css/hover-min.css" />
+    <link rel="stylesheet" href="./css/workshop.css" />
   </head>
 
   <body>
@@ -276,13 +234,166 @@
     </header>
 
     <div class="top-layer">
-      <div id="root" class="top"></div>
+      <div class="grid heading">
+        <div><h2>Workshops</h2></div>
+      </div>
+
+      <ul class="cards">
+        <li>
+          <div class="card">
+            <img
+              src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f278facccb6d3d3cc3c63b1%2F3-Important-Ways-Artificial-Intelligence-Will-Transform-Your-Business-And-Turbocharge%2F960x0.jpg%3Ffit%3Dscale"
+              class="card__image"
+              alt=""
+            />
+            <div class="card__overlay">
+              <div class="card__header">
+                <img class="card__thumb" src="images/picture.png" alt="" />
+                <div class="card__header-text">
+                  <h3 class="card__title">Artificial Intelligence</h3>
+                  <!-- <span class="card__status">1 hour ago</span> -->
+                </div>
+              </div>
+              <p class="card__description">
+                Machine learning provides systems the ability to automatically
+                learn and improve from experience without being explicitly
+                programmed
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgqUbjsTHdi05Fc9cf2cGxcwl8oE1XVKHIx2yprVh9mQ9M50vnEEncW8_yS7mK0q5NmqQ&usqp=CAU"
+              class="card__image"
+              alt=""
+            />
+            <div class="card__overlay">
+              <div class="card__header">
+                <img class="card__thumb" src="images/picture.png" alt="" />
+
+                <div class="card__header-text">
+                  <h3 class="card__title">Android Development</h3>
+                  <!-- <span class="card__status">3 hours ago</span> -->
+                </div>
+              </div>
+              <p class="card__description">
+                Machine learning provides systems the ability to automatically
+                learn and improve from experience without being explicitly
+                programmed
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDUdATyrvrvdvzytwNBfmcFPzvoDTZ9xfhgQ&usqp=CAU"
+              class="card__image"
+              alt=""
+            />
+            <div class="card__overlay">
+              <div class="card__header">
+                <img class="card__thumb" src="images/picture.png" alt="" />
+
+                <div class="card__header-text">
+                  <h3 class="card__title">Cyber Security</h3>
+                  <!-- <span class="card__tagline"
+                      >Lorem ipsum dolor sit amet consectetur</span
+                    > -->
+                </div>
+              </div>
+              <p class="card__description">
+                Machine learning provides systems the ability to automatically
+                learn and improve from experience without being explicitly
+                programmed
+              </p>
+            </div>
+          </div>
+        </li>
+        <!-- </ul>
+      <ul class="cards"> -->
+        <li>
+          <div class="card">
+            <img
+              src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f278facccb6d3d3cc3c63b1%2F3-Important-Ways-Artificial-Intelligence-Will-Transform-Your-Business-And-Turbocharge%2F960x0.jpg%3Ffit%3Dscale"
+              class="card__image"
+              alt=""
+            />
+            <div class="card__overlay">
+              <div class="card__header">
+                <img class="card__thumb" src="images/picture.png" alt="" />
+                <div class="card__header-text">
+                  <h3 class="card__title">Artificial Intelligence</h3>
+                  <!-- <span class="card__status">1 hour ago</span> -->
+                </div>
+              </div>
+              <p class="card__description">
+                Machine learning provides systems the ability to automatically
+                learn and improve from experience without being explicitly
+                programmed
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgqUbjsTHdi05Fc9cf2cGxcwl8oE1XVKHIx2yprVh9mQ9M50vnEEncW8_yS7mK0q5NmqQ&usqp=CAU"
+              class="card__image"
+              alt=""
+            />
+            <div class="card__overlay">
+              <div class="card__header">
+                <img class="card__thumb" src="images/picture.png" alt="" />
+
+                <div class="card__header-text">
+                  <h3 class="card__title">Android Development</h3>
+                  <!-- <span class="card__status">3 hours ago</span> -->
+                </div>
+              </div>
+              <p class="card__description">
+                Machine learning provides systems the ability to automatically
+                learn and improve from experience without being explicitly
+                programmed
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDUdATyrvrvdvzytwNBfmcFPzvoDTZ9xfhgQ&usqp=CAU"
+              class="card__image"
+              alt=""
+            />
+            <div class="card__overlay">
+              <div class="card__header">
+                <img class="card__thumb" src="images/picture.png" alt="" />
+
+                <div class="card__header-text">
+                  <h3 class="card__title">Cyber Security</h3>
+                  <!-- <span class="card__tagline"
+                      >Lorem ipsum dolor sit amet consectetur</span
+                    > -->
+                </div>
+              </div>
+              <p class="card__description">
+                Machine learning provides systems the ability to automatically
+                learn and improve from experience without being explicitly
+                programmed
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
 
-    <!-- <div class="cur" id="circle">
+    <div class="cur" id="circle">
       <div class="main-cur"></div>
       <img class="satelite" src="https://bit.ly/30JAPdZ" alt="" />
-    </div> -->
+    </div>
 
     <script src="./js/js1.js"></script>
     <script src="./js/js2.js"></script>
@@ -290,7 +401,7 @@
     <script src="./js/js4.js"></script>
     <script src="./js/js5.js"></script>
     <script src="./js/js6.js"></script>
-    <!-- <script>
+    <script>
       let links = document.querySelector(".main-content a");
       const cursors = document.querySelector(".cur");
       document.addEventListener("mousemove", (e) => {
@@ -308,6 +419,6 @@
           cursors.classList.remove("expand");
         }, 500);
       });
-    </script> -->
+    </script>
   </body>
 </html>
