@@ -75,6 +75,13 @@
       }
 
 
+
+
+      header {
+          background-color: #060d21 !important;
+      }
+
+
       
 
     </style>
@@ -881,6 +888,10 @@
 
     </div>
 
+    <div class="cur" id="circle">
+        <div class="main-cur"></div><img class="satelite" src="./Satellite.svg" alt="">
+      </div>
+
     <script src="wow.min.js"></script>
     <script>
         new WOW().init();
@@ -893,5 +904,25 @@
     <script src="./js/js4.js"></script>
     <script src="./js/js5.js"></script>
     <script src="./js/js6.js"></script>
+
+    <script>
+        let links = document.querySelector(".main-content a");
+        const cursors = document.querySelector(".cur");
+        document.addEventListener("mousemove", (e) => {
+          let x = e.pageX;
+          let y = e.pageY;
+          cursors.setAttribute(
+            "style",
+            "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
+          );
+        });
+  
+        document.addEventListener("click", () => {
+          cursors.classList.add("expand");
+          setTimeout(() => {
+            cursors.classList.remove("expand");
+          }, 500);
+        });
+      </script>
   </body>
 </html>

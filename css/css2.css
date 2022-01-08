@@ -880,7 +880,7 @@ header .icons {
   display: flex;
   margin-right: 6.4rem;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 600px) {
   header .icons {
     display: none;
   }
@@ -1016,7 +1016,7 @@ header .global-nav__list li:first-child {
 header .global-nav__list a {
   display: inline-block;
   color: #fff;
-  font-size: 3.8rem;
+  font-size: 3rem;
   line-height: 1;
   letter-spacing: 0.1em;
   font-family: "futura_m";
@@ -1028,9 +1028,14 @@ header .global-nav__list a {
   -o-transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s;
   transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s;
 }
+
+.signIn{
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
   header .global-nav__list a {
-    font-size: 3.8rem;
+    font-size: 2.8rem;
   }
 }
 @media screen and (max-width: 420px) {

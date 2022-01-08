@@ -13,6 +13,7 @@
     <style>
       body {
         margin: 0;
+        cursor: none;
       }
       #globeViz {
         position: absolute;
@@ -86,12 +87,13 @@
       }
       
       .images-layer div{
-        width: 200px;
+        width: 150px;
         text-align: center;
       }
 
       .images-layer div p{
         font-size: 1.5em;
+        letter-spacing: 0.1em;
       }
 
       @media screen and (max-width: 600px) {
@@ -233,14 +235,14 @@
     to   { transform: translate(0, -0px); }    
 }
 
-/* @media only screen and (max-width: 380px) {
+@media only screen and (max-width: 600px) {
   .cur {
     display: none;
   }
   body {
     cursor: default;
   }
-} */
+}
 
 
 
@@ -279,6 +281,7 @@
       </div>
       <nav class="global-nav">
         <ul class="global-nav__list">
+          <li class="signIn"><a href="./signIn">SIGN IN</a></li>
           <li><a href="./about">ABOUT</a></li>
           <li><a href="./competitions">COMPETITIONS</a></li>
           <li><a href="./workshop">WORKSHOPS</a></li>
@@ -315,9 +318,9 @@
       <a href=""><div class="img4 floating"><img src="./images/satellite4.png" alt="" class="hvr-grow"><p class="subHead">Initiatives</p></div></a>
     </div>
     <div id="globeViz"></div>
-    <!-- <div class="cur" id="circle">
-      <div class="main-cur"></div><img class="satelite" src="https://bit.ly/30JAPdZ" alt="">
-    </div> -->
+    <div class="cur" id="circle">
+      <div class="main-cur"></div><img class="satelite" src="./Satellite.svg" alt="">
+    </div>
     <script>
       // Gen random data
       const N = 50;
@@ -375,7 +378,7 @@
         });
       });
     </script>
-    <!-- <script>
+    <script>
       let links = document.querySelector(".main-content a");
 const cursors = document.querySelector(".cur");
 document.addEventListener("mousemove", (e) => {
@@ -393,6 +396,6 @@ document.addEventListener("click", () => {
     cursors.classList.remove("expand");
   }, 500);
 });
-    </script> -->
+    </script>
   </body>
 </html>
